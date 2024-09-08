@@ -1,6 +1,7 @@
 import { FaRestroom } from "react-icons/fa";
 import { FaKitchenSet, FaToiletPortable } from "react-icons/fa6";
 import { GrSecure } from "react-icons/gr";
+import { IoCafeOutline, IoStarSharp } from "react-icons/io5";
 import { TbAirConditioning } from "react-icons/tb";
 
 const ServicesData = [
@@ -26,8 +27,14 @@ const ServicesData = [
     },
     {
         name: 'Complete Security & Privacy',
-        details: 'Pradhan Banquet, a top-notch banquet hall in Kolkata, ensures complete privacy by renting the community hall to one customer at a time.',
+        details: 'Rajbari Banquet & Cafe, a top-notch banquet hall in Kolkata, ensures complete privacy by renting the community hall to one customer at a time.',
         img: <GrSecure />
+    },
+    {
+        name: 'Cafe',
+        details: 'Welcome to Rajbari Banquet & Cafe, a cozy haven for coffee lovers. Enjoy our freshly brewed coffee, delicious snacks, and warm atmosphere. Perfect for relaxing or catching up with friends!',
+        img: <IoCafeOutline />,
+        star: <IoStarSharp />
     }
 ];
 

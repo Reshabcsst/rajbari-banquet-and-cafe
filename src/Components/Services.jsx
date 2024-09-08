@@ -5,11 +5,14 @@ import ServicesData from '../DemoData/ServicesData';
 const Services = () => {
     return (
         <div className='services container'>
-            <Heading title='Our Services' />
+            <Heading title='What We Offer' />
             <div className="service">
                 {ServicesData.map((data, index) => {
                     return (
                         <div className='box' key={index}>
+                            <div className="star">
+                                  {data.star && data.star}
+                            </div>
                             <div className="icon">
                                 {data.img}
                             </div>

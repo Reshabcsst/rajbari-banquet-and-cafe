@@ -14,7 +14,7 @@ const Header = () => {
     return (
         <div>
             <div className='nav'>
-            <img src={logo} className={`logo1 ${!visible ? 'visible' : ''}`} alt="logo" />
+                <img src={logo} className={`logo1 ${!visible ? 'visible' : ''}`} alt="logo" />
                 <button onClick={onpress} className='toggle-menu'>
                     {
                         visible ?

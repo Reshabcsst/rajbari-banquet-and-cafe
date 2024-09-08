@@ -5,6 +5,7 @@ import Services from './Components/Services';
 const Home = () => {
     return (
         <div>
+            <div className="pro"></div>
             <Banner />
             <Services />
         </div>
