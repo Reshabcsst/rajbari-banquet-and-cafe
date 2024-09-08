@@ -14,6 +14,7 @@ const Header = () => {
     return (
         <div>
             <div className='nav'>
+            <img src={logo} className={`logo1 ${!visible ? 'visible' : ''}`} alt="logo" />
                 <button onClick={onpress} className='toggle-menu'>
                     {
                         visible ?
@@ -24,10 +25,11 @@ const Header = () => {
                 </button>
                 <div className={`menu ${visible ? 'visible' : ''}`}>
                     <a href="">Home</a>
-                    <a href="">About</a>
+                    <a href="">Gallery</a>
                     <a href="">Services</a>
-                    <a href="">Contact</a>
+                    <a href="">Contact Us</a>
                 </div>
+                <img src={logo} className={`logo ${visible ? 'visible' : ''}`} alt="logo" />
             </div>
 
 
@@ -35,10 +37,10 @@ const Header = () => {
                 <img src={logo} className='logo' alt="logo" />
                 <div className="bigmenu">
                     <a href="">Home</a>
-                    <a href="">About</a>
+                    <a href="">Gallery</a>
                     <span></span>
                     <a href="">Services</a>
-                    <a href="">Contact</a>
+                    <a href="">Contact Us</a>
                 </div>
             </div>
         </div>
