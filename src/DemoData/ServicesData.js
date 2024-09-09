@@ -27,7 +27,7 @@ const ServicesData = [
     },
     {
         name: 'Complete Security & Privacy',
-        details: 'Rajbari Banquet & Cafe, a top-notch banquet hall in Kolkata, ensures complete privacy by renting the community hall to one customer at a time.',
+        details: 'Rajbari Banquet & Cafe, a top-notch banquet hall in Raidighi, ensures complete privacy by renting the community hall to one customer at a time.',
         img: <GrSecure />
     },
     {
