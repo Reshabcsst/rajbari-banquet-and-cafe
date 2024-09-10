@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { GrClose } from 'react-icons/gr';
 import logo from './Assets/logo.png';
-import { PiCoffee } from 'react-icons/pi';
 import { BiMenu } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [visible, setVisible] = useState(false);
@@ -14,7 +14,7 @@ const Header = () => {
     return (
         <div>
             <div className='nav'>
-                <img src={logo} className={`logo1 ${!visible ? 'visible' : ''}`} alt="logo" />
+                <Link to='/'><img src={logo} className={`logo1 ${!visible ? 'visible' : ''}`} alt="logo" /></Link>
                 <button onClick={onpress} className='toggle-menu'>
                     {
                         visible ?
@@ -24,23 +24,23 @@ const Header = () => {
                     }
                 </button>
                 <div className={`menu ${visible ? 'visible' : ''}`}>
-                    <a href="">Home</a>
-                    <a href="">Gallery</a>
-                    <a href="">Services</a>
-                    <a href="">Contact Us</a>
+                    <Link to='/'>Home</Link>
+                    <Link to='/gallery'>Gallery</Link>
+                    <Link>Services</Link>
+                    <Link>Contact Us</Link>
                 </div>
-                <img src={logo} className={`logo ${visible ? 'visible' : ''}`} alt="logo" />
+                <Link to='/'><img src={logo} className={`logo ${visible ? 'visible' : ''}`} alt="logo" /></Link>
             </div>
 
 
             <div className="bignav">
-                <img src={logo} className='logo' alt="logo" />
+                <Link to='/'><img src={logo} className='logo' alt="logo" /></Link>
                 <div className="bigmenu">
-                    <a href="">Home</a>
-                    <a href="">Gallery</a>
+                    <Link to='/'>Home</Link>
+                    <Link to='/gallery'>Gallery</Link>
                     <span></span>
-                    <a href="">Services</a>
-                    <a href="">Contact Us</a>
+                    <Link>Services</Link>
+                    <Link>Contact Us</Link>
                 </div>
             </div>
         </div>

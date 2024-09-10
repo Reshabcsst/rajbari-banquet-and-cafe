@@ -32,7 +32,7 @@ const Footer = () => {
 
                 <div className="copy">
                     <p>© 2024 Rajbari Banquet & Cafe. All Rights Reserved.</p>
-                    <p>Developed By <a>Reshab</a></p>
+                    <p>Developed By <a href='tel:8585891309'>Reshab</a></p>
                 </div>
             </div>
         </div>

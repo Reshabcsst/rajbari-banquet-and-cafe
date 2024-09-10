@@ -4,6 +4,7 @@ import Home from './Home';
 import Header from './Header';
 import Notification from './Components/Notification';
 import Footer from './Footer';
+import Gallery from './Gallery';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/gallery' element={<Gallery />} />
       </Routes>
       <Footer />
     </BrowserRouter>
