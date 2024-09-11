@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { GrClose } from 'react-icons/gr';
 import logo from './Assets/logo.png';
 import { BiMenu } from 'react-icons/bi';
@@ -24,28 +24,30 @@ const Header = () => {
                     }
                 </button>
                 <div className={`menu ${visible ? 'visible' : ''}`}>
-                    <Link to='/'>Home</Link>
-                    <Link to='/gallery'>Gallery</Link>
-                    <Link>Services</Link>
-                    <Link>Contact Us</Link>
+                    <Link to='/' onClick={onpress}>Home</Link>
+                    <Link to='/gallery' onClick={onpress}>Gallery</Link>
+                    <Link onClick={onpress}>Services</Link>
+                    <Link onClick={onpress}>Contact Us</Link>
                 </div>
-                <Link to='/'><img src={logo} className={`logo ${visible ? 'visible' : ''}`} alt="logo" /></Link>
+                <Link onClick={onpress} to='/'><img src={logo} className={`logo ${visible ? 'visible' : ''}`} alt="logo" /></Link>
             </div>
 
-
+            <div className="con">
+                <a href='tel:+91 9433119893'>+91 94331-19893</a>
+                <a href='mailto:ashisnaskar379@gmail.com'>ashisnaskar379@gmail.com</a>
+            </div>
             <div className="bignav">
                 <Link to='/'><img src={logo} className='logo' alt="logo" /></Link>
                 <div className="bigmenu">
-                    <Link to='/'>Home</Link>
-                    <Link to='/gallery'>Gallery</Link>
+                    <Link to='/' onClick={onpress}>Home</Link>
+                    <Link to='/gallery' onClick={onpress}>Gallery</Link>
                     <span></span>
-                    <Link>Services</Link>
-                    <Link>Contact Us</Link>
+                    <Link onClick={onpress}>Services</Link>
+                    <Link onClick={onpress}>Contact Us</Link>
                 </div>
             </div>
         </div>
+    );
+};
 
-    )
-}
-
-export default Header
+export default Header;

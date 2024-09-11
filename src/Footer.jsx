@@ -22,7 +22,7 @@ const Footer = () => {
                 </div>
 
                 <div className="col">
-                    <h2>Social Media</h2>
+                    <h2>Get In Touch</h2>
                     <div className="social">
                         <Link target="_blank" to='https://www.facebook.com/people/Rajbari-Cafe-Banquet/61565093559940/?mibextid=ZbWKwL'><FaFacebookF /></Link>
                         <Link target="_blank" to='https://www.instagram.com/rajbaricafe.official/?igsh=MjF5N2dqODV3emkw'><FaInstagram /></Link>
