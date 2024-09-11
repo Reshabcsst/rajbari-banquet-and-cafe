@@ -866,16 +866,18 @@ body {
                     &:nth-child(1) {
                         color: #60A5FA;
                     }
+
                     &:nth-child(2) {
                         color: #3B82F6;
                     }
+
                     &:nth-child(3) {
                         color: #EC4899;
                     }
 
-                    &:hover{
-background: white;
-border-radius: 5px;
+                    &:hover {
+                        background: white;
+                        border-radius: 5px;
                     }
                 }
             }
