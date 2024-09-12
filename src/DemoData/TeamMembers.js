@@ -1,4 +1,4 @@
-import { FaTwitter, FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaTwitter, FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 const TeamMembers = [
     {
