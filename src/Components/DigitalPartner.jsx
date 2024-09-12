@@ -13,7 +13,7 @@ const DigitalPartner = () => {
                             <div key={index} className="card">
                                 <img
                                     src={member.imgSrc}
-                                    alt={`Placeholder image for ${member.name}`}
+                                    alt={`Placeholder for ${member.name}`}
                                 />
                                 <h3>{member.name}</h3>
                                 <p>{member.role}</p>
