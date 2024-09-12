@@ -5,6 +5,7 @@ import Header from './Header';
 import Notification from './Components/Notification';
 import Footer from './Footer';
 import Gallery from './Gallery';
+import Services from './Services';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/gallery' element={<Gallery />} />
+        <Route path='/services' element={<Services />} />
       </Routes>
       <Footer />
     </BrowserRouter>

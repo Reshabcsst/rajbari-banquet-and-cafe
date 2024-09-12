@@ -26,7 +26,7 @@ const Header = () => {
                 <div className={`menu ${visible ? 'visible' : ''}`}>
                     <Link to='/' onClick={onpress}>Home</Link>
                     <Link to='/gallery' onClick={onpress}>Gallery</Link>
-                    <Link onClick={onpress}>Services</Link>
+                    <Link to='/services' onClick={onpress}>Services</Link>
                     <Link onClick={onpress}>Contact Us</Link>
                 </div>
                 <Link onClick={onpress} to='/'><img src={logo} className={`logo ${visible ? 'visible' : ''}`} alt="logo" /></Link>
@@ -42,7 +42,7 @@ const Header = () => {
                     <Link to='/' onClick={onpress}>Home</Link>
                     <Link to='/gallery' onClick={onpress}>Gallery</Link>
                     <span></span>
-                    <Link onClick={onpress}>Services</Link>
+                    <Link to='/services' onClick={onpress}>Services</Link>
                     <Link onClick={onpress}>Contact Us</Link>
                 </div>
             </div>

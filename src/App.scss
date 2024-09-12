@@ -720,7 +720,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 400px;
+    min-height: 430px;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -741,12 +741,13 @@ body {
 
 
     .in {
-        margin-top: 3rem;
+        margin-top: 4rem;
         width: fit-content;
         z-index: 2;
 
         h1 {
             font-size: 50px;
+            text-align: center;
             color: $main4;
             font-family: "Lobster", sans-serif;
             text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.61);
