@@ -3,7 +3,7 @@ import { FaTwitter, FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/f
 const TeamMembers = [
     {
         name: "Jane Doe",
-        role: "Social Media Manager",
+        role: "social media promoter",
         imgSrc: "https://placehold.co/128x128",
         social: [
             { platform: "twitter", icon: <FaTwitter />, link: "#" },
@@ -13,7 +13,7 @@ const TeamMembers = [
     },
     {
         name: "John Smith",
-        role: "Content Creator",
+        role: "Social Media Manager",
         imgSrc: "https://placehold.co/128x128",
         social: [
             { platform: "twitter", icon: <FaTwitter />, link: "#" },
