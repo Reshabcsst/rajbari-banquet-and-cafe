@@ -21,6 +21,7 @@ const DigitalPartner = () => {
                                     {member.social.map((social, i) => (
                                         <a key={i} href={social.link}>
                                             {social.icon}
+                                            <span class="tooltip-social">{social.platform}</span>
                                         </a>
                                     ))}
                                 </div>

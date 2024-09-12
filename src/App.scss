@@ -29,7 +29,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: .7rem 15px;
-    background: $main4;
+    background: $main3;
     z-index: 90000;
 
     a {
@@ -862,6 +862,8 @@ body {
                     font-size: 1.25rem;
                     padding: .5rem .5rem .2rem .5rem;
                     transition: all 0.2s ease-in-out;
+                    text-decoration: none;
+                    position: relative;
 
                     &:nth-child(1) {
                         color: #60A5FA;
@@ -878,6 +880,44 @@ body {
                     &:hover {
                         background: white;
                         border-radius: 5px;
+                    }
+
+                    // Tooltip
+                    .tooltip-social {
+                        background: #262626;
+                        display: block;
+                        position: absolute;
+                        bottom: 13%;
+                        left: 50%;
+                        padding: 0.5rem 0.4rem;
+                        border-radius: 5px;
+                        font-size: 0.8rem;
+                        font-weight: 600;
+                        opacity: 0;
+                        pointer-events: none;
+                        transform: translate(-50%, -90%);
+                        transition: all 0.2s ease;
+                        z-index: 1;
+
+                        &:after {
+                            content: " ";
+                            position: absolute;
+                            bottom: 1px;
+                            left: 50%;
+                            border: solid;
+                            border-width: 10px 10px 0 10px;
+                            border-color: transparent;
+                            transform: translate(-50%, 100%);
+                        }
+
+                        &:after {
+                            border-top-color: #262626;
+                        }
+                    }
+
+                    &:hover .tooltip-social {
+                        opacity: 1;
+                        transform: translate(-50%, -130%);
                     }
                 }
             }
