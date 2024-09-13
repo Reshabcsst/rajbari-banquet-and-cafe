@@ -1,6 +1,6 @@
 import React from 'react';
-import bg from './Assets/Services.jpg';
-import CommonBanner from './Components/CommonBanner';
+import bg from '../Assets/Services.jpg';
+import CommonBanner from '../Components/CommonBanner';
 
 const Services = () => {
     return (

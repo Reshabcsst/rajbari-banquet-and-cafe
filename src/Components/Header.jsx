@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { GrClose } from 'react-icons/gr';
-import logo from './Assets/logo.png';
+import logo from '../Assets/logo.png';
 import { BiMenu } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 
@@ -27,7 +27,7 @@ const Header = () => {
                     <Link to='/' onClick={onpress}>Home</Link>
                     <Link to='/gallery' onClick={onpress}>Gallery</Link>
                     <Link to='/services' onClick={onpress}>Services</Link>
-                    <Link onClick={onpress}>Contact Us</Link>
+                    <Link to='/contact' onClick={onpress}>Contact Us</Link>
                 </div>
                 <Link onClick={onpress} to='/'><img src={logo} className={`logo ${visible ? 'visible' : ''}`} alt="logo" /></Link>
             </div>
@@ -43,7 +43,7 @@ const Header = () => {
                     <Link to='/gallery' onClick={onpress}>Gallery</Link>
                     <span></span>
                     <Link to='/services' onClick={onpress}>Services</Link>
-                    <Link onClick={onpress}>Contact Us</Link>
+                    <Link to='/contact' onClick={onpress}>Contact Us</Link>
                 </div>
             </div>
         </div>

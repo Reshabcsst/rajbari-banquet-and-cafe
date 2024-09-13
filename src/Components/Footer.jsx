@@ -1,9 +1,11 @@
 import React from 'react';
-import logo from './Assets/logo.png';
+import logo from '../Assets/logo.png';
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+    const navigate = useNavigate();
+
     return (
         <div className='footer'>
             <div className=" in container">
@@ -14,10 +16,10 @@ const Footer = () => {
                 <div className="col">
                     <h2>Company</h2>
                     <ul>
-                        <li>Home</li>
-                        <li>Gallery</li>
-                        <li>Services</li>
-                        <li>Contact Us</li>
+                        <li onClick={() => { navigate('/') }}>Home</li>
+                        <li onClick={() => { navigate('/gallery') }}>Gallery</li>
+                        <li onClick={() => { navigate('services') }}>Services</li>
+                        <li onClick={() => { navigate('/contact') }}>Contact Us</li>
                     </ul>
                 </div>
 

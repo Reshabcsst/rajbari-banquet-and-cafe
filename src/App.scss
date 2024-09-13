@@ -930,3 +930,98 @@ body {
 
     }
 }
+
+
+
+
+.contact-page {
+    font-family: Arial, sans-serif;
+    .contact-info {
+      background-color: #f7f7f7;
+      padding: 3rem 0;
+      text-align: center;
+  
+      h2 {
+        font-size: 2.5rem;
+        color: $main1;
+        margin-bottom: 1.5rem;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        color: $main1;
+        margin-bottom: 2rem;
+      }
+  
+      .contact-details {
+        list-style-type: none;
+        padding: 0;
+  
+        li {
+          font-size: 1.1rem;
+          color: $main1;
+          margin: 0.5rem 0;
+          strong {
+            color: $main1;
+          }
+        }
+      }
+    }
+  
+    .contact-form {
+      padding: 4rem 0;
+      background-color: #ffffff;
+      text-align: center;
+  
+      h2 {
+        font-size: 2.5rem;
+        color: $main1;
+        margin-bottom: 2rem;
+      }
+  
+      form {
+        display: inline-block;
+        width: 100%;
+        max-width: 600px;
+  
+        .form-group {
+          margin-bottom: 1.5rem;
+          text-align: left;
+  
+          label {
+            font-size: 1rem;
+            color: $main1;
+            margin-bottom: 0.5rem;
+            display: block;
+          }
+  
+          input, textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+          }
+  
+          textarea {
+            height: 150px;
+          }
+        }
+  
+        .submit-btn {
+          background-color: $main1;
+          color: #fff;
+          padding: 1rem 2rem;
+          border: none;
+          border-radius: 5px;
+          font-size: 1.2rem;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: $main2;
+          }
+        }
+      }
+    }
+  }
+  
