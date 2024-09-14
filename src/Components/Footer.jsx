@@ -11,7 +11,7 @@ const Footer = () => {
             <div className=" in container">
                 <div className="col">
                     <img src={logo} alt="logo" />
-                    <p>Nestled in the heart of Raidighi Kankandighi, Rajbari Banquet & Cafe offers the perfect venue for your special occasions with our elegant banquet hall and a cozy cafe for everyday moments. Celebrate with us!</p>
+                    <p>Nestled in the heart of Raidighi Kankandighi, Rajbari Banquet & Café offers the perfect venue for your special occasions with our elegant banquet hall and a cozy cafe for everyday moments. Celebrate with us!</p>
                 </div>
                 <div className="col">
                     <h2>Company</h2>
@@ -33,7 +33,7 @@ const Footer = () => {
                 </div>
 
                 <div className="copy">
-                    <p>© 2024 Rajbari Banquet & Cafe. All Rights Reserved.</p>
+                    <p>© 2024 Rajbari Banquet & Café. All Rights Reserved.</p>
                     <p>Developed By <a href='tel:8585891309'>Reshab</a></p>
                 </div>
             </div>

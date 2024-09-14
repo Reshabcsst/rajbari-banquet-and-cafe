@@ -773,7 +773,7 @@ body {
     @media screen and (max-width:500px) {
         gap: 0.5rem;
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-        margin-top: 0rem;
+        margin-top: 5rem;
     }
 
     .box {
@@ -933,95 +933,314 @@ body {
 
 
 
-
+// Contact
 .contact-page {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+
     .contact-info {
-      background-color: #f7f7f7;
-      padding: 3rem 0;
-      text-align: center;
-  
-      h2 {
-        font-size: 2.5rem;
-        color: $main1;
-        margin-bottom: 1.5rem;
-      }
-  
-      p {
-        font-size: 1.2rem;
-        color: $main1;
-        margin-bottom: 2rem;
-      }
-  
-      .contact-details {
-        list-style-type: none;
-        padding: 0;
-  
-        li {
-          font-size: 1.1rem;
-          color: $main1;
-          margin: 0.5rem 0;
-          strong {
-            color: $main1;
-          }
+        background-color: transparent;
+        padding: 4rem 0;
+        text-align: center;
+
+        .info-section p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-top: 5rem;
+            margin-bottom: 2.5rem;
         }
-      }
+
+        .contact-details {
+            list-style: none;
+            padding: 0;
+            font-size: 1.1rem;
+            color: #444;
+
+            li {
+                margin-bottom: 0.75rem;
+
+                strong {
+                    color: $main1;
+                }
+            }
+        }
+
+        .map-container {
+            margin-top: 2rem;
+            height: fit-content;
+            padding: 0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
     }
-  
+
     .contact-form {
-      padding: 4rem 0;
-      background-color: #ffffff;
-      text-align: center;
-  
-      h2 {
-        font-size: 2.5rem;
-        color: $main1;
-        margin-bottom: 2rem;
-      }
-  
-      form {
-        display: inline-block;
-        width: 100%;
-        max-width: 600px;
-  
-        .form-group {
-          margin-bottom: 1.5rem;
-          text-align: left;
-  
-          label {
-            font-size: 1rem;
+        padding: 5rem 0;
+        background-color: #fff;
+        text-align: center;
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
             color: $main1;
-            margin-bottom: 0.5rem;
-            display: block;
-          }
-  
-          input, textarea {
-            width: 100%;
-            padding: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1rem;
-          }
-  
-          textarea {
-            height: 150px;
-          }
         }
-  
-        .submit-btn {
-          background-color: $main1;
-          color: #fff;
-          padding: 1rem 2rem;
-          border: none;
-          border-radius: 5px;
-          font-size: 1.2rem;
-          cursor: pointer;
-  
-          &:hover {
-            background-color: $main2;
-          }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .form-group {
+                width: 100%;
+                margin-bottom: 1.5rem;
+                text-align: left;
+
+                label {
+                    font-size: 1rem;
+                    color: $main1;
+                    margin-bottom: 0.5rem;
+                    display: block;
+                }
+
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 1rem;
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    font-size: 1rem;
+                    transition: border-color 0.3s ease;
+
+                    &:focus {
+                        outline: 2px solid $main2;
+                    }
+                }
+
+                textarea {
+                    height: 150px;
+                }
+            }
+
+            .submit-btn {
+                background-color: $main1;
+                color: #fff;
+                padding: .8rem 1.8rem;
+                border: none;
+                border-radius: 5px;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: $main2;
+                }
+            }
         }
-      }
     }
-  }
-  
+
+    @media (max-width: 768px) {
+        .contact-info {
+            padding: 3rem 1rem;
+        }
+
+        .contact-form {
+            padding: 4rem 1rem;
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            form {
+                .form-group {
+                    margin-bottom: 1.2rem;
+                }
+
+                .submit-btn {
+                    padding: 0.7rem 1.5rem;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .contact-info {
+            padding: 2rem 1rem;
+
+            .info-section li {
+                text-align: left;
+                font-size: 15px;
+            }
+        }
+
+        .contact-form {
+            padding: 3rem 1rem;
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            form {
+                .form-group {
+                    margin-bottom: 1rem;
+
+                    label {
+                        font-size: 15px;
+                    }
+
+                    input,
+                    textarea {
+                        padding: .8rem;
+                    }
+                }
+
+                .submit-btn {
+                    padding: 0.6rem 1rem;
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 360px) {
+        .info-section p {
+            margin-top: 5rem;
+        }
+    }
+}
+
+
+
+
+// Services
+.services-container {
+    padding: 15px;
+    background-color: $main4;
+    font-family: 'Arial', sans-serif;
+
+    section {
+        display: flex;
+        max-width: 1285px;
+        width: 100%;
+        margin: 5rem auto 40px auto;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background: $main3;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+
+        .image {
+            width: 40%;
+            height: 250px;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .content {
+            width: 55%;
+            padding-left: 20px;
+
+            h2 {
+                font-size: 28px;
+                margin-bottom: 20px;
+                color: $main1;
+            }
+
+            p {
+                font-size: 18px;
+                color: $main2;
+                margin-bottom: 15px;
+            }
+
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+
+                li {
+                    font-size: 16px;
+                    color: #555;
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+
+                    svg {
+                        height: 20px;
+                        color: $main1;
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .banquet-image {
+        background-image: url('./Assets/banquetbg.jpg');
+    }
+
+    .cafe-image {
+        background-image: url('./Assets/cafe.jpg');
+    }
+
+    .catering-image {
+        background-image: url('./Assets/catering.jpg');
+    }
+
+    @media (max-width: 768px) {
+        section {
+            flex-direction: column;
+            text-align: center;
+
+            .image {
+                width: 100%;
+                height: 200px;
+            }
+
+            .content {
+                width: 100%;
+                padding: 1rem 10px 10px 10px;
+
+                h2 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                ul li {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        section {
+            padding: 10px;
+
+            .image {
+                height: 150px;
+            }
+
+            .content {
+                h2 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+
+                ul li {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

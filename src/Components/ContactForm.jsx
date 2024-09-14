@@ -1,4 +1,5 @@
 import React from 'react';
+import Heading from './Heading';
 
 const ContactForm = () => {
   return (
@@ -6,16 +7,20 @@ const ContactForm = () => {
       <section className="contact-info">
         <div className="container">
           <div className="info-section">
-            <h2>Contact Information</h2>
+            <Heading title='Contact Information' />
             <p>
-              Have any questions? Feel free to reach out, and we’ll be happy to help!
+              Got questions? We’re here to help! Reach out, and we’ll get back to you.
             </p>
             <ul className="contact-details">
               <li><strong>Phone:</strong> +91 94331-19893</li>
               <li><strong>Email:</strong> ashisnaskar379@gmail.com</li>
-              <li><strong>Address:</strong> Kankandighi Raj Bari, State Highway, Raidighi, Kankandighi, West Bengal 743349</li>
+              <li><strong>Address:</strong> Kankandighi Raj Bari, West Bengal 743349</li>
               <li><strong>Hours:</strong> Mon - Fri: 5:00 PM - 10:00 PM</li>
             </ul>
+          </div>
+          {/* Google Map */}
+          <div className="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12196.827781937272!2d88.4544525!3d21.9916946!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0249005fa487c3%3A0x7b1f6b488a67eafd!2sRajbari%20Banquet%20%26%20Cafe!5e1!3m2!1sen!2sin!4v1726326043088!5m2!1sen!2sin" width="100%" height="400" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </section>
