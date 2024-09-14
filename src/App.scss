@@ -153,6 +153,8 @@ body {
     }
 }
 
+
+// Nav menu
 .menu {
     position: fixed;
     right: 0;
@@ -193,6 +195,8 @@ body {
     }
 }
 
+
+// Navbar
 .nav {
     .logo1 {
         visibility: hidden;
@@ -273,6 +277,8 @@ body {
     }
 }
 
+
+// Home
 .home {
     width: 100%;
     height: 100%;
@@ -449,6 +455,8 @@ body {
     }
 }
 
+
+// global Heading
 .heading {
     position: relative;
     width: 100%;
@@ -479,6 +487,8 @@ body {
     }
 }
 
+
+// Home Services
 .services .service {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -556,6 +566,8 @@ body {
     }
 }
 
+
+// footer
 .footer {
     width: 100%;
     padding: 3rem 0;
@@ -716,6 +728,8 @@ body {
     }
 }
 
+
+// Common Banner
 .common-banner {
     display: flex;
     justify-content: center;
@@ -759,6 +773,8 @@ body {
     }
 }
 
+
+// Gallery
 .gallery-images .in {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
@@ -816,6 +832,8 @@ body {
     }
 }
 
+
+// Social Media Team
 .digital-partner {
     margin: 1rem 0 6rem 0;
 
