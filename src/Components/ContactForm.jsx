@@ -1,7 +1,84 @@
-import React from 'react';
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import Heading from './Heading';
 
 const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const [errors, setErrors] = useState({});
+
+  // Handle input change
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData({
+      ...formData,
+      [id]: value,
+    });
+
+    setErrors({
+      ...errors,
+      [id]: ''
+    });
+  };
+
+  // Validate the form
+  const validateForm = () => {
+    const newErrors = {};
+
+    if (!formData.name) {
+      newErrors.name = 'Full name is required.';
+    }
+
+    if (!formData.email) {
+      newErrors.email = 'Email address is required.';
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = 'Email address is invalid.';
+    }
+
+    if (!formData.message) {
+      newErrors.message = 'Message is required.';
+    }
+
+    return newErrors;
+  };
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const formErrors = validateForm();
+
+    if (Object.keys(formErrors).length === 0) {
+      // No errors, send the email
+      emailjs
+        .send(
+          process.env.REACT_APP_SERVICE_ID,
+          process.env.REACT_APP_TEMPLATE_ID,
+          formData,
+          process.env.REACT_APP_USER_ID
+        )
+        .then(
+          (response) => {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('Message sent successfully!');
+            // Reset the form after successful submission
+            setFormData({ name: '', email: '', message: '' });
+          },
+          (error) => {
+            console.log('FAILED...', error);
+            alert('Failed to send the message, please try again.');
+          }
+        );
+    } else {
+      // Set validation errors
+      setErrors(formErrors);
+    }
+  };
+
   return (
     <div className="contact-page">
       <section className="contact-info">
@@ -28,18 +105,38 @@ const ContactForm = () => {
       <section className="contact-form">
         <div className="container">
           <h2>Get In Touch</h2>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="name">Full Name</label>
-              <input type="text" id="name" placeholder="Your Name" />
+              <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                value={formData.name}
+                onChange={handleChange}
+              />
+              {errors.name && <p className="error">{errors.name}</p>}
             </div>
             <div className="form-group">
               <label htmlFor="email">Email Address</label>
-              <input type="email" id="email" placeholder="Your Email" />
+              <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                value={formData.email}
+                onChange={handleChange}
+              />
+              {errors.email && <p className="error">{errors.email}</p>}
             </div>
             <div className="form-group">
               <label htmlFor="message">Message</label>
-              <textarea id="message" placeholder="Your Message"></textarea>
+              <textarea
+                id="message"
+                placeholder="Your Message"
+                value={formData.message}
+                onChange={handleChange}
+              />
+              {errors.message && <p className="error">{errors.message}</p>}
             </div>
             <button type="submit" className="submit-btn">Submit</button>
           </form>
