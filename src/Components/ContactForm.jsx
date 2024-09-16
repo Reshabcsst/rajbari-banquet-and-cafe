@@ -91,7 +91,7 @@ const ContactForm = () => {
             <ul className="contact-details">
               <li><strong>Phone:</strong> +91 94331-19893</li>
               <li><strong>Email:</strong> ashisnaskar379@gmail.com</li>
-              <li><strong>Address:</strong> Kankandighi Raj Bari, West Bengal 743349</li>
+              <li><strong>Address:</strong> Kankandighi Raj Bari, Raidighi, West Bengal 743349</li>
               <li><strong>Hours:</strong> Mon - Fri: 5:00 PM - 10:00 PM</li>
             </ul>
           </div>
