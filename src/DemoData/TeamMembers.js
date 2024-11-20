@@ -15,7 +15,7 @@ const TeamMembers = [
         ]
     },
     {
-        name: "Argho Naskar",
+        name: "Abhirup Naskar",
         role: "Social Media Manager",
         imgSrc: Argho,
         social: [

@@ -15,9 +15,9 @@ const CEOSection = () => {
                 <div className="ceo-message">
                     <h2 className="ceo-title">A Message from Our CEO</h2>
                     <p className="ceo-text">
-                        "Welcome to Rajbari Banquet and Cafe, where we believe in creating memorable moments and delightful experiences. Our passion for great food, exceptional service, and a welcoming ambiance defines us. Whether you're here for a family gathering, a corporate event, or a casual meal, we promise to make your experience unforgettable."
+                        <q>Welcome to Rajbari Banquet and Cafe, where we believe in creating memorable moments and delightful experiences. Our passion for great food, exceptional service, and a welcoming ambiance defines us. Whether you're here for a family gathering, a corporate event, or a casual meal, we promise to make your experience unforgettable.</q>
                     </p>
-                    <p className="ceo-name">- Rajesh Kumar, CEO</p>
+                    <p className="ceo-name">- Dipanwita Naskar, CEO</p>
                 </div>
             </div>
         </section>
