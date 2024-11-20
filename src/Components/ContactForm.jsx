@@ -46,8 +46,6 @@ const ContactForm = () => {
     return newErrors;
   };
 
-  console.log(   process.env.REACT_APP_SERVICE_ID)
-
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
