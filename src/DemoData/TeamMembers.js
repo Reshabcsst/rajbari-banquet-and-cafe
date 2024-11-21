@@ -21,11 +21,11 @@ const TeamMembers = [
         social: [
             { platform: "twitter", icon: <FaTwitter />, link: "#" },
             { platform: "facebook", icon: <FaFacebookF />, link: "#" },
-            { platform: "instagram", icon: <FaInstagram />, link: "#" },
+            { platform: "instagram", icon: <FaInstagram />, link: "https://www.instagram.com/_error._.abhirup?igsh=MWt2Y3hhZ3NwcTQ3OA==" },
         ]
     },
     {
-        name: "Sumouli Mondol",
+        name: "Sumouli Mandal",
         role: "social media promoter",
         imgSrc: Sumouli,
         social: [
